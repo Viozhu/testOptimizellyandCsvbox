@@ -2,18 +2,18 @@ import React from "react";
 import { CSVBoxButton } from "@csvbox/react";
 
 export const Uploadfiles = () => {
-  const takeData = () => {
-    fetch("", {
-      "Access-Control-Allow-Origin": "*",
-      mode: "no-cors",
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data, "datas"))
-      .catch(function (error) {
-        console.log("Request failed", error);
-      });
-    return;
-  };
+  // const takeData = () => {
+  //   fetch("", {
+  //     "Access-Control-Allow-Origin": "*",
+  //     mode: "no-cors",
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => console.log(data, "datas"))
+  //     .catch(function (error) {
+  //       console.log("Request failed", error);
+  //     });
+  //   return;
+  // };
 
   // function download(dataurl, filename) {
   //   const link = document.createElement("a");
@@ -50,7 +50,6 @@ export const Uploadfiles = () => {
           );
         }}
       ></CSVBoxButton>
-      <button onClick={takeData}>test</button>
     </>
   );
 };
